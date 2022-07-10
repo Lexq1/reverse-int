@@ -1,8 +1,12 @@
 module.exports = function reverse (n) {
-  let strNumb = '' + numb;
+  let strNumb = '' + n;
   let strNumbRev = '';
   for(let i = strNumb.length - 1; i >= 0; i--){
-  	strNumbRev += strNumb[i];
+    if(strNumb[i] == '-'){
+        strNumbRev += '';
+    }else{
+        strNumbRev += strNumb[i];
+    }
   }
   
   return +strNumbRev;
